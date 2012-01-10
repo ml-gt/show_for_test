@@ -1,3 +1,8 @@
+PATH
+  remote: ../show_for
+  specs:
+    show_for (0.2.4)
+
 GEM
   remote: http://rubygems.org/
   specs:
@@ -71,4 +76,5 @@ PLATFORMS
 
 DEPENDENCIES
   rails (= 3.0.7)
+  show_for!
   sqlite3
