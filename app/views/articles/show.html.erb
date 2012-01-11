@@ -2,9 +2,23 @@
 	<pre>s.attribute :title</pre>
 	<%= s.attribute :title %>
 	<hr />
+	
 	<pre>s.attribute :title, :value => :upcase</pre>
   <%= s.attribute :title, :value => :upcase %>
 	<hr />
+	
+	<pre>s.attribute :groups</pre>
+  <%= s.attribute :groups %>
+	<hr />	
+		
+	<pre>s.attribute :groups, :value => lambda {|s| "<p>#{s}</p>".html_safe} </pre>
+  <%= s.attribute :groups, :value => lambda {|s| "<p>#{s}</p>".html_safe} %>
+	<hr />	
+		
+	<pre>s.attribute(:groups) {|s| "<p>#{s}</p>".html_safe}</pre>
+  <%= s.attribute(:groups) {|s| "<p>#{s}</p>".html_safe} %>
+	<hr />	
+		
   <%= s.attribute :description %>
   <%= s.attribute :published %>
   <%= s.attribute :active %>
